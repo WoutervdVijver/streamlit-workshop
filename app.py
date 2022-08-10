@@ -1,5 +1,6 @@
 import streamlit as st
 import transformers
+import torch
 import wikipedia
 from transformers import pipeline, Pipeline
 
@@ -45,7 +46,7 @@ def main():
         answer = result['answer']
 
         st.write(answer)
-        
+
 
 
 
